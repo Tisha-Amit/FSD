@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Commerce Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>ShopEase</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li>🛒 Cart: <span id="cartCount">0</span></li>
+    </ul>
+</nav>
+
+<section class="products">
+
+    <div class="product-card">
+        <h3>Headphones</h3>
+        <p>Price: ₹1500</p>
+        <button class="add-btn" onclick="addToCart(1500)">Add</button>
+        <button class="remove-btn" onclick="removeFromCart(1500)">Remove</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Smart Watch</h3>
+        <p>Price: ₹3000</p>
+        <button class="add-btn" onclick="addToCart(3000)">Add</button>
+        <button class="remove-btn" onclick="removeFromCart(3000)">Remove</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Keyboard</h3>
+        <p>Price: ₹1200</p>
+        <button class="add-btn" onclick="addToCart(1200)">Add</button>
+        <button class="remove-btn" onclick="removeFromCart(1200)">Remove</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Mouse</h3>
+        <p>Price: ₹800</p>
+        <button class="add-btn" onclick="addToCart(800)">Add</button>
+        <button class="remove-btn" onclick="removeFromCart(800)">Remove</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Bluetooth Speaker</h3>
+        <p>Price: ₹2200</p>
+        <button class="add-btn" onclick="addToCart(2200)">Add</button>
+        <button class="remove-btn" onclick="removeFromCart(2200)">Remove</button>
+    </div>
+
+    <div class="product-card">
+        <h3>Power Bank</h3>
+        <p>Price: ₹1800</p>
+        <button class="add-btn" onclick="addToCart(1800)">Add</button>
+        <button class="remove-btn" onclick="removeFromCart(1800)">Remove</button>
+    </div>
+
+</section>
+
+<!-- TOTAL -->
+<div class="total">
+    Total Price: ₹<span id="totalPrice">0</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

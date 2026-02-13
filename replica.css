@@ -1,0 +1,433 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, Helvetica Neue, Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #0073b1;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    color: #444;
+    font-weight: 550;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0073b1;
+}
+
+/* HERO SECTION */
+.hero-section {
+    width: 90%;
+    margin: 40px auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    /* 🔥 Centers LEFT + RIGHT vertically */
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* 🔥 centers heading+text+buttons */
+}
+
+.hero-left h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn-group {
+    display: flex;
+    gap: 12px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #0073b1;
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #005a8c;
+    transform: scale(1.05);
+}
+
+.btn-outline {
+    border: 2px solid #0073b1;
+    color: #0073b1;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #eaf6ff;
+    transform: scale(1.03);
+}
+
+/* Hero images */
+/* Fix hero images */
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 300px;
+    gap: 15px;
+}
+
+/* small image on top */
+.small-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* large tall image on the right */
+.large-img {
+    grid-row: span 2;
+    width: 300px;
+    height: 465px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.blue-left img {
+    width: 55%;
+    max-width: 260px;   /* 🔥 drastically smaller */
+    height: auto;
+    display: block;
+    margin: 0 auto;     /* center image */
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.blue-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* 🔥 Center text vertically */
+}
+
+
+.blue-wide-section {
+    background: #e9f4ff; /* light blue exactly like LinkedIn */
+    padding: 60px 0;
+    display: flex;
+    align-items: center; /* 🔥 Center vertically */
+    justify-content: center;
+    gap: 60px;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 12px;
+}
+
+
+.tips-img {
+    width: 60%;
+    max-width: 250px;
+    height: auto;
+    margin: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.cta-right img {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    margin: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* BLUE WIDE SECTION */
+.blue-wide-section {
+    background: #f3faff;
+    padding: 50px 0;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 40px;
+}
+
+.blue-left, .blue-right {
+    flex: 1;
+}
+
+.blue-left img {
+    width: 100%;
+}
+
+.blue-right h2 {
+    margin-bottom: 12px;
+}
+
+/* STATS SECTION */
+.stats-section {
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    gap: 40px;
+}
+
+.big-number {
+    font-size: 60px;
+    font-weight: bold;
+    color: #0073b1;
+}
+
+.stats-box {
+    flex: 1;
+}
+
+.stats-text {
+    flex: 2;
+}
+
+/* STEPS */
+.steps-section {
+    background: #f8f8f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.steps-grid {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.step-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.step-num {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0073b1;
+}
+
+/* TIPS SECTION */
+.tips-section {
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 🔥 THIS centers everything vertically */
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.tips-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* 🔥 This centers heading, tabs, text vertically */
+}
+
+.tips-right {
+    flex: 1;
+}
+
+.tip-tabs {
+    margin-top: 20px;
+}
+
+.tab-btn {
+    background: #e7f4ff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin-right: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.active {
+    background: #0073b1;
+    color: #fff;
+}
+
+.tips-img {
+    width: 100%;
+}
+
+/* EXAM GRID */
+.exams-section {
+    width: 90%;
+    margin: auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.exam-grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.exam-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.exam-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.exam-icon {
+    width: 90px;
+    margin-bottom: 12px;
+}
+
+/* CTA SECTION */
+.cta-section {
+    width: 90%;
+    margin: 50px auto;
+    background: #0073b1;
+    color: white;
+    padding: 50px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.cta-left {
+    flex: 1;
+}
+
+.cta-left h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cta-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.white-outline {
+    border-color: white;
+    color: white;
+}
+
+.cta-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    color: #ccc;
+}
+
+.footer-links a {
+    margin: 0 12px;
+    color: #ccc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .hero-section,
+    .blue-wide-section,
+    .stats-section,
+    .tips-section,
+    .cta-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .exam-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+
+        /* FONT */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* FORM STYLING */
+        form {
+            width: 400px;
+            padding: 50px;                 /* Padding */
+            border: 2px solid #333;     /* Border */
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* LABELS */
+        label {
+            display: block;
+            margin-top: 10px;            /* Margin */
+            font-weight: bold;
+        }
+
+        /* INPUT FIELDS */
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;               /* Padding */
+            margin-top: 5px;            /* Margin */
+            border: 1px solid #666;   /* Border */
+            border-radius: 5px;
+        }
+
+        .gender, .languages, .subjects {
+            width: auto;
+        }
+        button, input[type="submit"], input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        /* HEADING */
+        h2 {
+            text-decoration: underline;  /* Text Decoration */
+            color: darkblue;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Inline CSS -->
+    <h2 style="color: darkblue; text-align: center;">
+        Student Registration Form (Tisha Amit - 119)
+    </h2>
+
+    <form action="#" method="post">
+    <!-- Full Name -->
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name"
+    required><br>
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+    <!-- Phone -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit
+    number"><br>
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" class="gender" name="gender" value="Male"> Male
+    <input type="radio" class="gender" name="gender" value="Female"> Female
+    <input type="radio" class="gender" name="gender" value="Other"> Other
+    <!-- Date of Birth -->
+    <br><label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br>
+    <!-- Date Selection -->
+    <label for="date">Select Date:</label>
+    <select id="day" name="day" required>
+        <option value="">--Select Day--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    </select><br>
+    <select id="month" name="month" required>
+        <option value="">--Select Month--</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+    </select><br>
+    <select id="year" name="year" required>
+        <option value="">--Select Year--</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+    </select><br>
+    <!-- Languages Known -->
+    <label>Languages Known:</label>
+    <input type="checkbox" class="languages" name="lang1" value="English"> English
+    <input type="checkbox" class="languages" name="lang2" value="Hindi"> Hindi<br>
+    <!-- Address -->
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="3" placeholder="Enter your
+    address"></textarea><br>
+    <!-- Subject -->
+    <label>Subject:</label>
+    <input type="radio" class="subjects" name="subject" value="Maths"> Maths
+    <input type="radio" class="subjects" name="subject" value="Science"> Science
+    <input type="radio" class="subjects" name="subject" value="English"> English
+    <!-- Submit & Reset -->
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+</form>
+
+</div>
+
+</body>
+</html>
