@@ -13,7 +13,7 @@ export const getProduct = (id) => fakeStoreAPI.get(`/products/${id}`);
 
 // ─── Our Backend API (Auth, Payment, Upload) ──────────────────────────────────
 const backendAPI = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://shopease-e1r6.onrender.com",
 });
 
 // Attach JWT token automatically to every backend request
